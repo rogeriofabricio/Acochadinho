@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Acochadinho" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IAZ-ES-v1v">
+                                <rect key="frame" x="16" y="188.5" width="343" height="290.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite um número entre 1 e 100:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG0-SM-0yG">
+                                        <rect key="frame" x="50" y="0.0" width="243" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="J4J-TS-Gah"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lb2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5H-Hd-ThN">
+                                        <rect key="frame" x="159.5" y="20.5" width="24" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Ri0-mv-pKv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-Ym-We7">
+                                        <rect key="frame" x="0.0" y="65.5" width="343" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="iPA-sw-5cT"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-e4-r9U">
+                                        <rect key="frame" x="0.0" y="110.5" width="343" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="9np-6b-YGH"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-Ql-Glp">
+                                        <rect key="frame" x="114.5" y="155.5" width="114" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RBu-Yl-fsv"/>
+                                        </constraints>
+                                        <state key="normal" title="Salvar o Número"/>
+                                        <connections>
+                                            <action selector="btnSalvarNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyD-Wv-lUJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZO-Ky-cUK">
+                                        <rect key="frame" x="143" y="200.5" width="57" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="S3x-7O-esw"/>
+                                        </constraints>
+                                        <state key="normal" title="Verificar"/>
+                                        <connections>
+                                            <action selector="btnVerificar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1b-dg-Uc8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ja-XY-nea">
+                                        <rect key="frame" x="142" y="245.5" width="59" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="eqw-OM-KzN"/>
+                                        </constraints>
+                                        <state key="normal" title="Reiniciar"/>
+                                        <connections>
+                                            <action selector="btnReiniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFm-Ro-SzK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="bgr-Ym-We7" secondAttribute="trailing" id="Lfc-K1-gmc"/>
+                                    <constraint firstItem="bgr-Ym-We7" firstAttribute="leading" secondItem="IAZ-ES-v1v" secondAttribute="leadingMargin" id="bAn-Mn-NVw"/>
+                                    <constraint firstItem="Jhe-e4-r9U" firstAttribute="leading" secondItem="IAZ-ES-v1v" secondAttribute="leadingMargin" id="pUl-EB-oPN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Jhe-e4-r9U" secondAttribute="trailing" id="vWU-oo-PXE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IAZ-ES-v1v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AEP-gA-mgq"/>
+                            <constraint firstItem="IAZ-ES-v1v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nyn-Ln-OAF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IAZ-ES-v1v" secondAttribute="trailing" id="PxD-ki-pjd"/>
+                            <constraint firstItem="IAZ-ES-v1v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RYa-zl-9pa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="certo" destination="bgr-Ym-We7" id="KwY-5P-Nfb"/>
+                        <outlet property="escolhido" destination="Jhe-e4-r9U" id="oDX-nE-lfp"/>
+                        <outlet property="lb1" destination="SG0-SM-0yG" id="xjz-HR-Wh4"/>
+                        <outlet property="lb2" destination="u5H-Hd-ThN" id="ftu-BL-cDv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
